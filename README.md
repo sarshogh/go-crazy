@@ -7,7 +7,7 @@
 - Solving hacker rank algorithm with Go as fun ;P
 
 ## Why?  
-I'd like keep my programming spirit alive since my career is going toward cloud and software architecure, I'd like to maitain my skills excellent as a Thoughtworker.
+I'd like keep my programming spirit alive since my career is going toward cloud and software architecure, I'd like to maitain my skills excellent as a Thoughtworker.  
 Also, I'd like to use this repo as a trainig material for my website and future articles and references.
 
 ### TDD Development Approach
