@@ -11,7 +11,7 @@ var sample_numbers = []struct {
 	input  int
 	output bool
 }{
-	{"isPrime(1)", 1, true},
+	{"isPrime(1)", 1, false},
 	{"isPrime(4)", 4, false},
 	{"isPrime(21)", 21, false},
 	{"isPrime(19)", 19, true},
