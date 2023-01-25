@@ -31,3 +31,15 @@ func Test_Seve_IsPrime(t *testing.T) {
 		})
 	}
 }
+
+func Test_GeneratePrimeNumbersLessthanN(t *testing.T){
+	subject:= 32
+	expect:= []int{2,3,5,7,11,13,17,19,23,31}
+
+	result: = GeneratePrimeNums(subject)
+
+	if result != expect {
+		t.Errorf("wrong prime value generated for N:%d", subject)
+	}
+	
+}
