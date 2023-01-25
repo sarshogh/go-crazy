@@ -24,5 +24,5 @@ I'd like to apply CleanCode, SRP,....
 I'd like to apply DDD and CQRS with an imaginary context following Onion Architecure.
 
 ### Design Patterns 
-Don't worry I won't do OOP design patterns with G ;)    
+Don't worry I won't do OOP design patterns with Go ;)    
 I'd like to demonstrate some patterns like plugin, state-machine, pull and push server-client grpc, ...
