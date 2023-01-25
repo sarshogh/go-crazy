@@ -11,7 +11,7 @@ var sample_numbers = []struct {
 	input  int
 	output bool
 }{
-	{"isPrime(1)", 1, true},
+	{"isPrime(1)", 1, false},
 	{"isPrime(4)", 4, false},
 	{"isPrime(21)", 21, false},
 	{"isPrime(19)", 19, true},
@@ -30,4 +30,29 @@ func Test_Seve_IsPrime(t *testing.T) {
 			}
 		})
 	}
+}
+
+func Test_GeneratePrimeNumbersLessthanN(t *testing.T) {
+	subject := 32
+	expect := []int{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31}
+
+	result := GeneratePrimeNums(subject)
+
+	if !isEqual(result, expect) {
+		t.Errorf("wrong prime value generated for N:%d", subject)
+	}
+
+}
+
+func isEqual(a, b []int) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	for i, v := range a {
+		if v != b[i] {
+			return false
+		}
+	}
+	return true
 }
