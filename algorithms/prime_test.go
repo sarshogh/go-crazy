@@ -1,6 +1,7 @@
 package algorithms
 
 import (
+	utils "techprincipalpathways.com/gocrazy/utilities"
 	"fmt"
 	"testing"
 )
@@ -36,23 +37,9 @@ func Test_GeneratePrimeNumbersLessthanN(t *testing.T) {
 	subject := 32
 	expect := []int{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31}
 
-	result := GeneratePrimeNums(subject)
+	primeNumbers := GeneratePrimeNums(subject)
 
-	if !isEqual(result, expect) {
+	if !utils.IsEqual(primeNumbers, expect) {
 		t.Errorf("wrong prime value generated for N:%d", subject)
 	}
-
-}
-
-func isEqual(a, b []int) bool {
-	if len(a) != len(b) {
-		return false
-	}
-
-	for i, v := range a {
-		if v != b[i] {
-			return false
-		}
-	}
-	return true
 }
